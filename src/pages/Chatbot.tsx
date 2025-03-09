@@ -85,7 +85,7 @@ const Chatbot = () => {
                                     }`}
                                 >
                                     <div
-                                        className={`max-w-xs p-3 rounded-lg shadow-md ${
+                                        className={`max-w-md p-3 rounded-lg shadow-md ${
                                             msg.sender === "user"
                                                 ? "bg-gradient-to-br from-purple-600 to-blue-500 text-white rounded-br-none"
                                                 : "bg-gray-100 text-gray-800 rounded-bl-none"

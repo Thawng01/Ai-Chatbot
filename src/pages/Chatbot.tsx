@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import TypingIndicator from "../Indicator";
 import Markdown from "react-markdown";
+import { url } from "../api/clientApi";
 
 interface Message {
     text: string;
@@ -25,9 +26,7 @@ const Chatbot = () => {
         setTyping(true);
 
         let botResponse = "";
-        const eventSource = new EventSource(
-            `http://localhost:5000/stream?input=${input}`
-        );
+        const eventSource = new EventSource(`${url}/stream?input=${input}`);
 
         eventSource.onmessage = (event) => {
             if (event.data === "[DONE]") {

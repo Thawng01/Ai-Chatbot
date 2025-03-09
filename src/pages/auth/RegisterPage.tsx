@@ -12,6 +12,7 @@ export default function Register() {
         name: "",
         email: "",
         password: "",
+        isAdmin: true,
     });
     const auth = useAuth();
     const navigate = useNavigate();

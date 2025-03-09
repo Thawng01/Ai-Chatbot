@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar but keep scrolling functional */
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+/* Custom styled scrollbar */
+.scrollbar-custom::-webkit-scrollbar {
+    width: 0px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #6b46c1, #3182ce);
+    border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #553c9a, #2b6cb0);
+}

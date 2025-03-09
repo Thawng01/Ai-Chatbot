@@ -1,4 +1,3 @@
-import React from "react";
 import { FaRobot, FaCommentDots, FaShieldAlt, FaRocket } from "react-icons/fa";
 import { Link } from "react-router";
 
@@ -80,7 +79,7 @@ const LandingPage = () => {
 };
 
 // Feature Card Component with Glassmorphism
-const FeatureCard = ({ icon, title, description }) => {
+const FeatureCard = ({ icon, title, description }: any) => {
     return (
         <div className="bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-lg text-center hover:scale-105 transition transform">
             <div className="flex justify-center">{icon}</div>

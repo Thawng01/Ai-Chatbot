@@ -1,5 +1,5 @@
 import { FaUser, FaEnvelope, FaLock, FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link, useNavigate, useRoutes } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { useAuth } from "../../context/AuthContextProvider";
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { clientApi } from "../../api/clientApi";

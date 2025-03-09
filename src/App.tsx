@@ -1,4 +1,3 @@
-import React from "react";
 import FileUpload from "./pages/FileUpload";
 import { createBrowserRouter } from "react-router";
 import Chatbot from "./pages/Chatbot";

@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router";
-import { useAuth } from "../context/AuthContextProvider";
-import { FiLogOut } from "react-icons/fi";
 import { clientApi } from "../api/clientApi";
 
 const FileUpload: React.FC = () => {
@@ -12,7 +9,6 @@ const FileUpload: React.FC = () => {
     const [uploadType, setUploadType] = useState<"file" | "website">("file");
     const [uploadProgress, setUploadProgress] = useState<number>(0);
 
-    const auth = useAuth();
     // Handle file selection
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.files && e.target.files[0]) {

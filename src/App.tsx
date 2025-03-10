@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import Layout from "./Layout";
 import Register from "./pages/auth/RegisterPage";
 import ProtectedRoute from "./ProtectedRoute";
+import DataDelete from "./pages/DataDelete";
 
 const App = createBrowserRouter([
     {
@@ -30,6 +31,14 @@ const App = createBrowserRouter([
                 element: (
                     <ProtectedRoute>
                         <FileUpload />
+                    </ProtectedRoute>
+                ),
+            },
+            {
+                path: "/delete",
+                element: (
+                    <ProtectedRoute>
+                        <DataDelete />
                     </ProtectedRoute>
                 ),
             },

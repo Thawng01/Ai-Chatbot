@@ -4,7 +4,7 @@ import { useAuth } from "../context/AuthContextProvider";
 
 const Header = () => {
     const auth = useAuth();
-    console.log("user : ", auth.user);
+
     const navigate = useNavigate();
     return (
         <header className="w-full bg-hero-gradient fixed left-0 top-0 z-20 text-white p-4 flex justify-between items-center">
@@ -25,6 +25,13 @@ const Header = () => {
                         <li>
                             <Link to="/upload" className="hover:underline">
                                 Upload
+                            </Link>
+                        </li>
+                    )}
+                    {auth.user?.isAdmin && (
+                        <li>
+                            <Link to="/delete" className="hover:underline">
+                                Data
                             </Link>
                         </li>
                     )}
